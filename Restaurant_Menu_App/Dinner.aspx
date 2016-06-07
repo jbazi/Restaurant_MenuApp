@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-  <title>Deserts</title>
+  <title>Chef's Special Dinner</title>
   <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link type="text/css" rel="stylesheet" href="../Bootstrap/css/bootstrap.css" />
   <!--<link type="text/css" rel="stylesheet" href="../StyleSheets/theme.css" />-->
