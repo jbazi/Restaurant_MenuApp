@@ -1,0 +1,70 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RestMenuApp.master.cs" Inherits="Restaurant_Menu_App.RestMenuApp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+  <title>Deserts</title>
+  <link type="text/css" rel="stylesheet" href="../Bootstrap/css/bootstrap.css" />
+  <!--<link type="text/css" rel="stylesheet" href="../StyleSheets/theme.css" />-->
+  <link href="../StyleSheets/MainAppStyle.css" rel="stylesheet" />
+  <asp:ContentPlaceHolder ID="head" runat="server">
+  </asp:ContentPlaceHolder>
+</head>
+<body>
+  <form id="form1" runat="server">
+
+    <div class="page">
+      <div class="header">
+        <div class="title">
+          <h2>A Restaurant Menu Application
+          </h2>
+          <h5>
+            <asp:Label ID="lblWelcome" runat="server" ForeColor="White">Your Restaurant Name</asp:Label>
+          </h5>
+        </div>
+      </div>
+    </div>
+    <nav class="LogInLogOut">
+        <!-- =====MENU==== -->
+        <ul class="nav navbar-nav">
+          <li>
+            <asp:Button ID="btnSignIn" runat="server" class="btn btn-md" Text="Sign In"  />
+            <!--<a href="#">Login</a>-->
+          </li>
+          <li>
+            <asp:Button ID="btnSignUp" runat="server" class="btn btn-sucess btn-md" Text="Sign Up" />
+            <!--<a href="#">Log Out</a>-->
+          </li>
+        </ul>
+    </nav>
+    <div class="clear hideSkiplink">
+      <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+        <Items>
+          <asp:MenuItem Value="Home" Text="Home" NavigateUrl="~/Home.aspx"/>
+          <asp:MenuItem Value="Menu" Text="Menu" >
+            <asp:MenuItem Text="BreakFast" Value="BreakFast"></asp:MenuItem>
+            <asp:MenuItem Text="Salads" Value="Salads" NavigateUrl="~/Salad.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Lunch Special" Value="Lunch Special"></asp:MenuItem>
+            <asp:MenuItem Text="Chef's Speciality" Value="Chef's Speciality"></asp:MenuItem>
+            <asp:MenuItem Text="Desert" Value="Desert" NavigateUrl="~/DesertMenu.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Kids Menu" Value="Kids Menu"></asp:MenuItem>
+          </asp:MenuItem>
+          <asp:MenuItem Value="About Us" Text="About Us" />
+          <asp:MenuItem Value="Contact Us" Text="Contact Us" />
+        </Items>
+      </asp:Menu>
+    </div>
+    
+    <div class="jumbotron">
+      <h1>Kitchen Foods Restaurant!</h1>
+      <p class="lead">Healthy Choice Foods You Can Trust</p>
+    </div>
+
+    <div class="main">
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+      </asp:ContentPlaceHolder>
+    </div>
+  </form>
+</body>
+</html>
