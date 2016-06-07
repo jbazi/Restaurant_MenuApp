@@ -47,12 +47,12 @@
         <Items>
           <asp:MenuItem Value="Home" Text="Home" NavigateUrl="~/Home.aspx" />
           <asp:MenuItem Value="Menu" Text="Menu" >
-            <asp:MenuItem Text="Salads" Value="Salads"></asp:MenuItem>
-            <asp:MenuItem Text="Break Fast" Value="Break Fast"></asp:MenuItem>
-            <asp:MenuItem Text="Lunch Special" Value="Lunch Special"></asp:MenuItem>
-            <asp:MenuItem Text="Chef's Speciality" Value="Chef's Speciality"></asp:MenuItem>
+            <asp:MenuItem Text="Salads" Value="Salads" NavigateUrl="~/Salad.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Break Fast" Value="Break Fast" NavigateUrl="~/BreakFast.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Lunch Special" Value="Lunch Special" NavigateUrl="~/LunchSpecial.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="Chef's Speciality" Value="Chef's Speciality" NavigateUrl="~/Dinner.aspx"></asp:MenuItem>
             <asp:MenuItem Text="Desert" Value="Desert" NavigateUrl="~/DesertMenu.aspx"></asp:MenuItem>
-            <asp:MenuItem Text="Kids Menu" Value="Kids Menu"></asp:MenuItem>
+            <asp:MenuItem Text="Kids Menu" Value="Kids Menu" NavigateUrl="~/Kids.aspx"></asp:MenuItem>
           </asp:MenuItem>
           <asp:MenuItem Value="About Us" Text="About Us" />
           <asp:MenuItem Value="Contact Us" Text="Contact Us" />

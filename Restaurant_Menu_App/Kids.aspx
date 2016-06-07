@@ -1,15 +1,22 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RestMenuApp.master.cs" Inherits="Restaurant_Menu_App.RestMenuApp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DesertMenu.aspx.cs" Inherits="Restaurant_Menu_App.DesertMenu" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
   <title>Deserts</title>
+  <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link type="text/css" rel="stylesheet" href="../Bootstrap/css/bootstrap.css" />
   <!--<link type="text/css" rel="stylesheet" href="../StyleSheets/theme.css" />-->
-  <link href="../StyleSheets/MainAppStyle.css" rel="stylesheet" />
-  <asp:ContentPlaceHolder ID="head" runat="server">
-  </asp:ContentPlaceHolder>
+  <link href="../StyleSheets/Kids.css" rel="stylesheet" />
+  <style type="text/css">
+    .auto-style1 {
+      color: #999999;
+    }
+    .auto-style2 {
+      color: #808080;
+    }
+  </style>
 </head>
 <body>
   <form id="form1" runat="server">
@@ -19,9 +26,6 @@
         <div class="title">
           <h2>A Restaurant Menu Application
           </h2>
-          <h5>
-            <asp:Label ID="lblWelcome" runat="server" ForeColor="White">Your Restaurant Name</asp:Label>
-          </h5>
         </div>
       </div>
     </div>
@@ -29,11 +33,11 @@
         <!-- =====MENU==== -->
         <ul class="nav navbar-nav">
           <li>
-            <asp:Button ID="btnSignIn" runat="server" class="btn btn-md" Text="Sign In"  />
+            <asp:Button ID="btnSignIn" runat="server" class="btn btn-md" Text="Sign In" OnClick="btnSignIn_Click"  />
             <!--<a href="#">Login</a>-->
           </li>
           <li>
-            <asp:Button ID="btnSignUp" runat="server" class="btn btn-sucess btn-md" Text="Sign Up" />
+            <asp:Button ID="btnSignUp" runat="server" class="btn btn-sucess btn-md" Text="Sign Up" OnClick="btnSignUp_Click" />
             <!--<a href="#">Log Out</a>-->
           </li>
         </ul>
@@ -42,7 +46,7 @@
       <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
         <Items>
           <asp:MenuItem Value="Home" Text="Home" NavigateUrl="~/Home.aspx" />
-          <asp:MenuItem Value="Menu" Text="Menu" >
+          <asp:MenuItem Value="Menu" Text="Menu">
             <asp:MenuItem Text="Salads" Value="Salads" NavigateUrl="~/Salad.aspx"></asp:MenuItem>
             <asp:MenuItem Text="Break Fast" Value="Break Fast" NavigateUrl="~/BreakFast.aspx"></asp:MenuItem>
             <asp:MenuItem Text="Lunch Special" Value="Lunch Special" NavigateUrl="~/LunchSpecial.aspx"></asp:MenuItem>
@@ -56,14 +60,37 @@
       </asp:Menu>
     </div>
     
-    <div class="jumbotron">
-      <h1>Kitchen Foods Restaurant!</h1>
-      <p class="lead">Healthy Choice Foods You Can Trust</p>
-    </div>
+    <div class="table-responsive">
+      <table class="table">
+        <thead class="thead-inverse">
+          <tr>
+            <th class="thead-inverse">Desert Item</th>
+            <th></th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tr class="alert-success">
+          <td>Yummy Spaghetti N' Meatballs</td>
+          <td id="cameraID1"><span class="glyphicon glyphicon-camera"></span></td>
+          <td class="tablePrice">$9.99</td>
+        </tr>
+        <tr class="alert-warning">
+          <td>Yummy Chicken Nuggets</td>
+          <td id="cameraID2"><span class="glyphicon glyphicon-camera"></span></td>
+          <td class="tablePrice">$40.99</td>
+        </tr>
+        <tr class="alert-danger">
+          <td>Yummy Spaghetti N' Sausage</td>
+          <td id="cameraID3"><span class="glyphicon glyphicon-camera"></span></td>
+          <td class="tablePrice">$32.99</td>
+        </tr>
+        <tr class="alert-success">
+          <td>Yummy Rice</td>
+          <td id="cameraID4"><span class="glyphicon glyphicon-camera"></span></td>
+          <td class="tablePrice">$38.99</td>
+        </tr>
+      </table>
 
-    <div class="main">
-      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-      </asp:ContentPlaceHolder>
     </div>
   </form>
 </body>

@@ -67,8 +67,9 @@
     <Content Include="Bootstrap\js\npm.js" />
     <Content Include="BreakFast.aspx" />
     <Content Include="DesertMenu.aspx" />
+    <Content Include="Dinner.aspx" />
     <Content Include="Home.aspx" />
-    <Content Include="Images\bfast\french toast.jpg" />
+    <Content Include="Images\bfast\french-toast.jpg" />
     <Content Include="Images\bfast\fruit-pancakes.jpg" />
     <Content Include="Images\bfast\healthy-breakfast.jpg" />
     <Content Include="Images\bfast\mixed-fruit-cereal.jpg" />
@@ -79,17 +80,38 @@
     <Content Include="Images\Deserts\empire_ice_cream.jpg" />
     <Content Include="Images\Deserts\loadUp_Icecream.jpg" />
     <Content Include="Images\Deserts\oreo_cheese_cake.jpg" />
+    <Content Include="Images\Dinner\cat-fish.jpg" />
+    <Content Include="Images\Dinner\indian-food.jpg" />
+    <Content Include="Images\Dinner\injera.jpg" />
+    <Content Include="Images\Dinner\mashed-potato.jpg" />
+    <Content Include="Images\Dinner\mushroom-steak.jpg" />
+    <Content Include="Images\Kids\kids-main.jpg" />
+    <Content Include="Images\Kids\kids-spaghetti.jpg" />
+    <Content Include="Images\Kids\yummy-chicken-nuggets.jpg" />
+    <Content Include="Images\Kids\yummy-maccaroni.jpg" />
+    <Content Include="Images\Kids\yummy-rice.jpg" />
     <Content Include="Images\kitchen-background.jpg" />
     <Content Include="Images\KitchenFood.jpg" />
+    <Content Include="Images\lunch\chineese-food.jpg" />
+    <Content Include="Images\Dinner\dinner-main.jpg" />
+    <Content Include="Images\lunch\lunch-main.jpg" />
+    <Content Include="Images\lunch\paleo-burger.jpg" />
+    <Content Include="Images\lunch\pizza.jpg" />
+    <Content Include="Images\lunch\sandwitch.jpg" />
     <Content Include="Images\Salads\brocoli_salad.jpg" />
     <Content Include="Images\Salads\fruit-salad.jpg" />
     <Content Include="Images\Salads\pineapple-salad.jpg" />
     <Content Include="Images\Salads\salad.jpg" />
     <Content Include="Images\Salads\salad_bowl.jpg" />
+    <Content Include="Kids.aspx" />
+    <Content Include="LunchSpecial.aspx" />
     <Content Include="Salad.aspx" />
     <Content Include="Scripts\RestMenuApp.js" />
     <Content Include="StyleSheets\BreakFast.css" />
     <Content Include="StyleSheets\Desert.css" />
+    <Content Include="StyleSheets\Dinner.css" />
+    <Content Include="StyleSheets\Kids.css" />
+    <Content Include="StyleSheets\Lunch.css" />
     <Content Include="StyleSheets\Salad.css" />
     <Content Include="UserLogIn.aspx" />
     <Content Include="UserLogOut.aspx" />
@@ -126,12 +148,33 @@
     <Compile Include="DesertMenu.aspx.designer.cs">
       <DependentUpon>DesertMenu.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Dinner.aspx.cs">
+      <DependentUpon>Dinner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dinner.aspx.designer.cs">
+      <DependentUpon>Dinner.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kids.aspx.cs">
+      <DependentUpon>Kids.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kids.aspx.designer.cs">
+      <DependentUpon>Kids.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LunchSpecial.aspx.cs">
+      <DependentUpon>LunchSpecial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LunchSpecial.aspx.designer.cs">
+      <DependentUpon>LunchSpecial.aspx</DependentUpon>
     </Compile>
     <Compile Include="Salad.aspx.cs">
       <DependentUpon>Salad.aspx</DependentUpon>
@@ -178,9 +221,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="LogIn_LogOut_aspxPages\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -8,7 +8,7 @@
   <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link type="text/css" rel="stylesheet" href="../Bootstrap/css/bootstrap.css" />
   <!--<link type="text/css" rel="stylesheet" href="../StyleSheets/theme.css" />-->
-  <link href="../StyleSheets/Desert.css" rel="stylesheet" />
+  <link href="../StyleSheets/Dinner.css" rel="stylesheet" />
   <style type="text/css">
     .auto-style1 {
       color: #999999;
@@ -62,32 +62,37 @@
     
     <div class="table-responsive">
       <table class="table">
-        <thead>
+        <thead class="thead-inverse">
           <tr>
-            <th class="auto-style2">Desert Item</th>
+            <th class="thead-inverse">Desert Item</th>
             <th></th>
-            <th class="auto-style1">Price</th>
+            <th>Price</th>
           </tr>
         </thead>
         <tr class="alert-success">
-          <td>Cheese Cake</td>
+          <td>Special Cat-Fish</td>
           <td id="cameraID1"><span class="glyphicon glyphicon-camera"></span></td>
-          <td class="tablePrice">$9.99</td>
+          <td class="tablePrice">$30.99</td>
         </tr>
         <tr class="alert-warning">
-          <td>Oreo Cheese Cake</td>
+          <td>Special Indian Steak and Rice</td>
           <td id="cameraID2"><span class="glyphicon glyphicon-camera"></span></td>
-          <td class="tablePrice">$12.99</td>
+          <td class="tablePrice">$40.99</td>
         </tr>
         <tr class="alert-danger">
-          <td>Empire Ice Cream</td>
+          <td>Special Mushroom Steak Served with Potatoes</td>
           <td id="cameraID3"><span class="glyphicon glyphicon-camera"></span></td>
-          <td class="tablePrice">$11.99</td>
+          <td class="tablePrice">$32.99</td>
         </tr>
         <tr class="alert-success">
-          <td>Load It Up Ice Cream</td>
+          <td>Special Ethiopian Injera</td>
           <td id="cameraID4"><span class="glyphicon glyphicon-camera"></span></td>
-          <td class="tablePrice">$15.99</td>
+          <td class="tablePrice">$38.99</td>
+        </tr>
+        <tr class="alert-success">
+          <td>Special Marinated Steak and Mashed Potatoes</td>
+          <td id="cameraID5"><span class="glyphicon glyphicon-camera"></span></td>
+          <td class="tablePrice">$35.99</td>
         </tr>
       </table>
 

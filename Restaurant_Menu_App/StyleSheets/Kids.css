@@ -4,9 +4,9 @@
 
 /* HEADINGS   
 ----------------------------------------------------------*/
-body{
-  background:url(../Images/kitchen-background.jpg) no-repeat center fixed;
-  background-size:cover;
+body {
+    background: url(../Images/Kids/kids-main.jpg) no-repeat center center fixed;
+    background-size: cover; 
 }
 
 h1, h2, h3, h4, h5, h6
@@ -61,10 +61,8 @@ first child of the left and right table columns */
     margin-top: 0px;
 }
 
-
 /* PRIMARY LAYOUT ELEMENTS   
 ----------------------------------------------------------*/
-
 
 .header
 {
@@ -114,12 +112,6 @@ first child of the left and right table columns */
 /* TAB MENU   
 ----------------------------------------------------------*/
 
-div.hideSkiplink
-{
-    background-color:#ff6a00;
-    width:50%;
-}
-
 div.menu
 {
     padding: 4px 0px 4px 8px;
@@ -135,8 +127,7 @@ div.menu ul
 
 div.menu ul li a, div.menu ul li a:visited
 {
-    background-color: #ff6a00;
-    border: 1px #ff6a00 solid;
+    background-color: #695757;
     color: #dde4ec;
     display: block;
     line-height: 1.35em;
@@ -230,7 +221,6 @@ div.menu ul li a:active
 #usrLoginRadioBtnList
 {
   line-height:0.01;
-
 }
 
 .radioBtnChangeColor
@@ -241,4 +231,44 @@ div.menu ul li a:active
 .radioStyle
 {
   background-color:#999;
+}
+
+.table{
+  top:40%;
+  margin:0px;
+  padding:0px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto; 
+  text-transform:uppercase;
+  opacity:0.8;
+  background-color:#695757;
+}
+
+
+#cameraID1:hover:after{
+  content: url(../Images/Kids/kids-spaghetti.jpg); 
+  display: block;
+}
+
+#cameraID2:hover:after{
+  content: url(../Images/Kids/yummy-chicken-nuggets.jpg);
+  display: block;
+}
+
+#cameraID3:hover:after{
+  content: url(../Images/Kids/yummy-maccaroni.jpg);
+  display: block;
+}
+
+#cameraID4:hover:after{
+  content: url(../Images/Kids/yummy-rice.jpg); 
+  display: block;
+}
+
+
+
+.tablePrice{
+  color: green;
+  font-weight:bold;
 }
